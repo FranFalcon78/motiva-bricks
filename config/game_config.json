@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "game_version": "0.1.0",
+  "game_version": "0.1.3",
   "remote_enabled": false,
   "remote_level_index_url": "https://motiva.studio/motiva-bricks/levels/index.json",
   "request_timeout_seconds": 6,
   "ads_mode": "mock",
   "android_package": "studio.motiva.bricks",
-  "max_balls": 30,
+  "max_balls": 300,
   "show_fps": false
 }
