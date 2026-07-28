@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "collection": "Motiva Bricks - Escenarios de muestra",
+  "levels": [
+    "./level-01-neon-gates.json",
+    "./level-02-core-spiral.json",
+    "./level-03-pixel-guardian.json",
+    "./level-04-circuit-maze.json",
+    "./level-05-star-reactor.json"
+  ]
+}

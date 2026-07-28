@@ -1,0 +1,45 @@
+{
+  "id": "red-neural",
+  "order": 9,
+  "name": "Red Neural",
+  "subtitle": "Nodos y pistas conectadas en un laberinto digital",
+  "difficulty": "Demo 9",
+  "seed": 99071,
+  "theme": {
+    "backgroundTop": "#071f1f",
+    "backgroundBottom": "#010908",
+    "accent": "#22f2c7",
+    "palette": ["#22f2c7", "#31dfff", "#8dff66", "#eaff67", "#ff9d32"],
+    "indestructible": "#708684",
+    "ball": "#ffffff",
+    "ballGlow": "#a7fff0",
+    "paddleStart": "#22f2c7",
+    "paddleMiddle": "#31dfff",
+    "paddleEnd": "#eaff67"
+  },
+  "generator": {
+    "pattern": "circuit-maze",
+    "cols": 72,
+    "rows": 56,
+    "gap": 1.5,
+    "height": 650,
+    "hardRate": 0.25,
+    "veryHardRate": 0.065,
+    "indestructibleRate": 0.028,
+    "structuralEvery": 197
+  },
+  "physics": {
+    "ballSpeed": 9.45,
+    "ballRadius": 7.2,
+    "paddleWidth": 145,
+    "maxBounceAngleDeg": 74
+  },
+  "rules": { "lives": 3 },
+  "powerups": {
+    "dropRate": 0.14,
+    "wideSeconds": 13,
+    "shieldSeconds": 11,
+    "wideMultiplier": 1.72,
+    "weights": { "triple": 0.40, "wide": 0.30, "shield": 0.30 }
+  }
+}

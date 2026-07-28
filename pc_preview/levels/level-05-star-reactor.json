@@ -1,0 +1,45 @@
+{
+  "id": "star-reactor",
+  "order": 5,
+  "name": "Reactor Estelar",
+  "subtitle": "Anillos, radios y un nucleo de alta energia",
+  "difficulty": "Demo 5",
+  "seed": 55087,
+  "theme": {
+    "backgroundTop": "#300331",
+    "backgroundBottom": "#080011",
+    "accent": "#ff4f87",
+    "palette": ["#ff4f87", "#ff4f2f", "#ff9d32", "#ffe75b", "#9cef39", "#28dfff"],
+    "indestructible": "#8a8298",
+    "ball": "#ffffff",
+    "ballGlow": "#ff78aa",
+    "paddleStart": "#ff4f87",
+    "paddleMiddle": "#ff9d32",
+    "paddleEnd": "#ffe75b"
+  },
+  "generator": {
+    "pattern": "reactor",
+    "cols": 56,
+    "rows": 44,
+    "gap": 2,
+    "height": 635,
+    "hardRate": 0.23,
+    "veryHardRate": 0.06,
+    "indestructibleRate": 0.028,
+    "structuralEvery": 191
+  },
+  "physics": {
+    "ballSpeed": 9.2,
+    "ballRadius": 7.5,
+    "paddleWidth": 148,
+    "maxBounceAngleDeg": 72
+  },
+  "rules": { "lives": 3 },
+  "powerups": {
+    "dropRate": 0.13,
+    "wideSeconds": 14,
+    "shieldSeconds": 11,
+    "wideMultiplier": 1.72,
+    "weights": { "triple": 0.42, "wide": 0.28, "shield": 0.3 }
+  }
+}

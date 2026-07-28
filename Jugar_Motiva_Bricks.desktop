@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Jugar Motiva Bricks
+Comment=Inicia Motiva Bricks en Godot 4.7.1
+Exec=sh -c 'DIR=$(dirname "$0"); cd "$DIR" && exec ./JUGAR_MOTIVA_BRICKS.sh' %k
+Icon=applications-games
+Terminal=true
+Categories=Game;
+StartupNotify=true

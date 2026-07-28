@@ -1,0 +1,45 @@
+{
+  "id": "fortaleza-neon",
+  "order": 10,
+  "name": "Fortaleza Neon",
+  "subtitle": "Murallas, columnas y puentes de maxima densidad",
+  "difficulty": "Demo 10",
+  "seed": 101357,
+  "theme": {
+    "backgroundTop": "#22004a",
+    "backgroundBottom": "#05000f",
+    "accent": "#b45cff",
+    "palette": ["#b45cff", "#ff4fbb", "#ff5c4d", "#ff9d32", "#ffe75b", "#29ddff"],
+    "indestructible": "#81758e",
+    "ball": "#ffffff",
+    "ballGlow": "#e8c8ff",
+    "paddleStart": "#b45cff",
+    "paddleMiddle": "#ff4fbb",
+    "paddleEnd": "#29ddff"
+  },
+  "generator": {
+    "pattern": "neon-gates",
+    "cols": 72,
+    "rows": 56,
+    "gap": 1.5,
+    "height": 650,
+    "hardRate": 0.27,
+    "veryHardRate": 0.075,
+    "indestructibleRate": 0.03,
+    "structuralEvery": 211
+  },
+  "physics": {
+    "ballSpeed": 9.6,
+    "ballRadius": 7.1,
+    "paddleWidth": 142,
+    "maxBounceAngleDeg": 75
+  },
+  "rules": { "lives": 3 },
+  "powerups": {
+    "dropRate": 0.15,
+    "wideSeconds": 13,
+    "shieldSeconds": 10,
+    "wideMultiplier": 1.75,
+    "weights": { "triple": 0.44, "wide": 0.28, "shield": 0.28 }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "neon-gates",
+  "order": 1,
+  "name": "Puertas Neon",
+  "subtitle": "Columnas densas y pasillos abiertos",
+  "difficulty": "Demo 1",
+  "seed": 11027,
+  "theme": {
+    "backgroundTop": "#26004f",
+    "backgroundBottom": "#090018",
+    "accent": "#ff4f87",
+    "palette": ["#ff4f2f", "#ff8a2b", "#ffe75b", "#ffb52e"],
+    "indestructible": "#838899",
+    "ball": "#ffffff",
+    "ballGlow": "#ffe9ff",
+    "paddleStart": "#ff4f87",
+    "paddleMiddle": "#ffe75b",
+    "paddleEnd": "#ff765f"
+  },
+  "generator": {
+    "pattern": "neon-gates",
+    "cols": 54,
+    "rows": 40,
+    "gap": 2,
+    "height": 610,
+    "hardRate": 0.15,
+    "veryHardRate": 0.025,
+    "indestructibleRate": 0.018,
+    "structuralEvery": 149
+  },
+  "physics": {
+    "ballSpeed": 8.4,
+    "ballRadius": 8,
+    "paddleWidth": 156,
+    "maxBounceAngleDeg": 68
+  },
+  "rules": { "lives": 3 },
+  "powerups": {
+    "dropRate": 0.12,
+    "wideSeconds": 16,
+    "shieldSeconds": 13,
+    "wideMultiplier": 1.62,
+    "weights": { "triple": 0.34, "wide": 0.34, "shield": 0.32 }
+  }
+}

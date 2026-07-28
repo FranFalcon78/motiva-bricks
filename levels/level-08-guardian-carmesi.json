@@ -1,0 +1,45 @@
+{
+  "id": "guardian-carmesi",
+  "order": 8,
+  "name": "Guardian Carmesi",
+  "subtitle": "Una mascara mecanica protegida por circuitos",
+  "difficulty": "Demo 8",
+  "seed": 88447,
+  "theme": {
+    "backgroundTop": "#300910",
+    "backgroundBottom": "#090106",
+    "accent": "#ff3d5f",
+    "palette": ["#ff3d5f", "#ff6738", "#ffb13b", "#ffe46a", "#d94cff"],
+    "indestructible": "#86727a",
+    "ball": "#ffffff",
+    "ballGlow": "#ffb7c3",
+    "paddleStart": "#ff3d5f",
+    "paddleMiddle": "#ff6738",
+    "paddleEnd": "#ffe46a"
+  },
+  "generator": {
+    "pattern": "guardian",
+    "cols": 68,
+    "rows": 54,
+    "gap": 1.7,
+    "height": 650,
+    "hardRate": 0.24,
+    "veryHardRate": 0.06,
+    "indestructibleRate": 0.026,
+    "structuralEvery": 193
+  },
+  "physics": {
+    "ballSpeed": 9.3,
+    "ballRadius": 7.3,
+    "paddleWidth": 147,
+    "maxBounceAngleDeg": 73
+  },
+  "rules": { "lives": 3 },
+  "powerups": {
+    "dropRate": 0.145,
+    "wideSeconds": 14,
+    "shieldSeconds": 11,
+    "wideMultiplier": 1.72,
+    "weights": { "triple": 0.42, "wide": 0.29, "shield": 0.29 }
+  }
+}

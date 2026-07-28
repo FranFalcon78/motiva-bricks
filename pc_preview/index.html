@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#12002b">
+  <meta name="description" content="Motiva Bricks, prototipo jugable de rompe-ladrillos para Android y PC.">
+  <title>Motiva Bricks</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./assets/icons/icon-192.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="desktop-background" aria-hidden="true"></div>
+
+  <div id="app" class="app-shell">
+    <header class="topbar">
+      <div class="topbar-actions">
+        <button id="menuButton" class="icon-button" type="button" aria-label="Volver al menu">&#8592;</button>
+        <button id="pauseButton" class="icon-button pause-button" type="button" aria-label="Pausar">&#10074;&#10074;</button>
+      </div>
+      <div class="brand-block">
+        <div class="brand-title">MOTIVA BRICKS</div>
+        <div id="levelLabel" class="level-label">Cargando escenarios...</div>
+      </div>
+      <div class="hud-right">
+        <div id="livesDisplay" class="lives" aria-label="Vidas">&#10084;&#65039; &#10084;&#65039; &#10084;&#65039;</div>
+        <div id="scoreDisplay" class="score">0</div>
+      </div>
+    </header>
+
+    <section class="progress-strip" aria-label="Progreso del nivel">
+      <div class="progress-meta">
+        <span id="brickCounter">0 / 0</span>
+        <span id="statusText">Preparado</span>
+      </div>
+      <div class="progress-track"><div id="progressFill" class="progress-fill"></div></div>
+    </section>
+
+    <main id="stage" class="stage">
+      <canvas id="gameCanvas" width="720" height="1040" aria-label="Area de juego Motiva Bricks"></canvas>
+
+      <section id="menuScreen" class="screen-overlay menu-screen">
+        <div class="menu-card">
+          <div class="logo-orbit" aria-hidden="true">
+            <span class="logo-brick b1"></span><span class="logo-brick b2"></span><span class="logo-brick b3"></span>
+            <span class="logo-ball"></span>
+          </div>
+          <p class="eyebrow">PROTOTIPO JUGABLE 0.1</p>
+          <h1>Motiva Bricks</h1>
+          <p class="menu-copy">Rompe escenarios densos, multiplica las bolas y captura fichas de energia antes de que caigan.</p>
+          <div id="levelGrid" class="level-grid" aria-live="polite"></div>
+          <div class="source-line"><span id="levelSourceDot" class="source-dot"></span><span id="levelSource">Cargando niveles</span></div>
+        </div>
+      </section>
+
+      <section id="pauseScreen" class="screen-overlay compact-screen hidden" aria-hidden="true">
+        <div class="dialog-card">
+          <p class="eyebrow">PARTIDA EN PAUSA</p>
+          <h2>Respira. Las bolas esperan.</h2>
+          <button id="resumeButton" class="primary-button" type="button">Continuar</button>
+          <button id="restartFromPauseButton" class="secondary-button" type="button">Reiniciar nivel</button>
+          <button id="menuFromPauseButton" class="text-button" type="button">Elegir otro escenario</button>
+        </div>
+      </section>
+
+      <section id="resultScreen" class="screen-overlay compact-screen hidden" aria-hidden="true">
+        <div class="dialog-card result-card">
+          <p id="resultEyebrow" class="eyebrow">NIVEL COMPLETADO</p>
+          <h2 id="resultTitle">Escenario superado</h2>
+          <div class="result-score"><span>Puntuacion</span><strong id="resultScore">0</strong></div>
+          <div id="resultStars" class="result-stars" aria-label="Valoracion">&#9733; &#9733; &#9733;</div>
+          <button id="nextLevelButton" class="primary-button" type="button">Siguiente nivel</button>
+          <button id="retryButton" class="secondary-button" type="button">Jugar de nuevo</button>
+          <button id="menuFromResultButton" class="text-button" type="button">Volver a escenarios</button>
+        </div>
+      </section>
+
+      <section id="adInterstitial" class="screen-overlay ad-screen hidden" aria-hidden="true">
+        <div class="ad-dialog">
+          <div class="ad-badge">ANUNCIO DE PRUEBA</div>
+          <div class="ad-visual">
+            <div class="ad-cube c1"></div><div class="ad-cube c2"></div><div class="ad-cube c3"></div>
+            <div class="ad-pulse"></div>
+          </div>
+          <h2>Espacio preparado para AdMob</h2>
+          <p>En el PC se simula el anuncio. En Android este punto se conectara al intersticial real.</p>
+          <button id="closeAdButton" class="primary-button" type="button" disabled>Continuar en <span id="adCountdown">3</span></button>
+        </div>
+      </section>
+
+      <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+    </main>
+
+    <section class="control-hints">
+      <span><kbd>&larr;</kbd><kbd>&rarr;</kbd> mover</span>
+      <span><kbd>Espacio</kbd> lanzar</span>
+      <span><kbd>P</kbd> pausa</span>
+    </section>
+
+    <aside id="bannerAd" class="banner-ad" aria-label="Publicidad">
+      <div class="banner-ad-copy">
+        <strong>ESPACIO PUBLICITARIO</strong>
+        <span>Banner de prueba - AdMob se conectara en Android</span>
+      </div>
+      <span class="banner-ad-mark">MB</span>
+    </aside>
+  </div>
+
+  <noscript>Motiva Bricks necesita JavaScript para funcionar.</noscript>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

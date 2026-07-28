@@ -1,0 +1,45 @@
+{
+  "id": "templo-infinito",
+  "order": 7,
+  "name": "Templo Infinito",
+  "subtitle": "Anillos concentricos con puertas y cruces interiores",
+  "difficulty": "Demo 7",
+  "seed": 77129,
+  "theme": {
+    "backgroundTop": "#2b1600",
+    "backgroundBottom": "#080300",
+    "accent": "#ffd85a",
+    "palette": ["#ff5d2e", "#ff9638", "#ffd85a", "#fff1a1", "#c9904d"],
+    "indestructible": "#8c8070",
+    "ball": "#ffffff",
+    "ballGlow": "#fff0a8",
+    "paddleStart": "#ff5d2e",
+    "paddleMiddle": "#ff9638",
+    "paddleEnd": "#ffd85a"
+  },
+  "generator": {
+    "pattern": "concentric",
+    "cols": 70,
+    "rows": 54,
+    "gap": 1.6,
+    "height": 650,
+    "hardRate": 0.22,
+    "veryHardRate": 0.055,
+    "indestructibleRate": 0.022,
+    "structuralEvery": 181
+  },
+  "physics": {
+    "ballSpeed": 9.15,
+    "ballRadius": 7.5,
+    "paddleWidth": 150,
+    "maxBounceAngleDeg": 72
+  },
+  "rules": { "lives": 3 },
+  "powerups": {
+    "dropRate": 0.13,
+    "wideSeconds": 14,
+    "shieldSeconds": 12,
+    "wideMultiplier": 1.7,
+    "weights": { "triple": 0.36, "wide": 0.32, "shield": 0.32 }
+  }
+}

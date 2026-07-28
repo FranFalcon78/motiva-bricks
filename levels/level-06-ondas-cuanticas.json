@@ -1,0 +1,45 @@
+{
+  "id": "ondas-cuanticas",
+  "order": 6,
+  "name": "Ondas Cuanticas",
+  "subtitle": "Tres corredores ondulantes con chispas verticales",
+  "difficulty": "Demo 6",
+  "seed": 67031,
+  "theme": {
+    "backgroundTop": "#071a35",
+    "backgroundBottom": "#02050f",
+    "accent": "#25e7ff",
+    "palette": ["#25e7ff", "#37f5a5", "#f4ff6a", "#ff9d32", "#ff4f87"],
+    "indestructible": "#73869a",
+    "ball": "#ffffff",
+    "ballGlow": "#a8f8ff",
+    "paddleStart": "#25e7ff",
+    "paddleMiddle": "#37f5a5",
+    "paddleEnd": "#f4ff6a"
+  },
+  "generator": {
+    "pattern": "wave-tunnel",
+    "cols": 68,
+    "rows": 52,
+    "gap": 1.7,
+    "height": 650,
+    "hardRate": 0.19,
+    "veryHardRate": 0.04,
+    "indestructibleRate": 0.018,
+    "structuralEvery": 173
+  },
+  "physics": {
+    "ballSpeed": 9.0,
+    "ballRadius": 7.5,
+    "paddleWidth": 154,
+    "maxBounceAngleDeg": 71
+  },
+  "rules": { "lives": 3 },
+  "powerups": {
+    "dropRate": 0.14,
+    "wideSeconds": 15,
+    "shieldSeconds": 12,
+    "wideMultiplier": 1.68,
+    "weights": { "triple": 0.39, "wide": 0.31, "shield": 0.30 }
+  }
+}

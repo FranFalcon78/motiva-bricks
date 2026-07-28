@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "collection": "Motiva Bricks - 10 escenarios de muestra",
+  "levels": [
+    "./level-01-neon-gates.json",
+    "./level-02-core-spiral.json",
+    "./level-03-pixel-guardian.json",
+    "./level-04-circuit-maze.json",
+    "./level-05-star-reactor.json",
+    "./level-06-ondas-cuanticas.json",
+    "./level-07-templo-infinito.json",
+    "./level-08-guardian-carmesi.json",
+    "./level-09-red-neural.json",
+    "./level-10-fortaleza-neon.json"
+  ]
+}

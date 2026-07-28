@@ -1,0 +1,45 @@
+{
+  "id": "circuit-maze",
+  "order": 4,
+  "name": "Laberinto Circuito",
+  "subtitle": "Pistas interconectadas y cruces resistentes",
+  "difficulty": "Demo 4",
+  "seed": 44071,
+  "theme": {
+    "backgroundTop": "#082f3b",
+    "backgroundBottom": "#050016",
+    "accent": "#2ce8cf",
+    "palette": ["#20e6c7", "#28dfff", "#6cf05b", "#ffe75b", "#ff9d32"],
+    "indestructible": "#7c8992",
+    "ball": "#ffffff",
+    "ballGlow": "#2ce8cf",
+    "paddleStart": "#22d4c0",
+    "paddleMiddle": "#28dfff",
+    "paddleEnd": "#9cef39"
+  },
+  "generator": {
+    "pattern": "circuit-maze",
+    "cols": 58,
+    "rows": 42,
+    "gap": 2,
+    "height": 620,
+    "hardRate": 0.21,
+    "veryHardRate": 0.055,
+    "indestructibleRate": 0.025,
+    "structuralEvery": 137
+  },
+  "physics": {
+    "ballSpeed": 9.0,
+    "ballRadius": 7.5,
+    "paddleWidth": 150,
+    "maxBounceAngleDeg": 71
+  },
+  "rules": { "lives": 3 },
+  "powerups": {
+    "dropRate": 0.125,
+    "wideSeconds": 14,
+    "shieldSeconds": 12,
+    "wideMultiplier": 1.7,
+    "weights": { "triple": 0.4, "wide": 0.29, "shield": 0.31 }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "gameName": "Motiva Bricks",
+  "localLevelIndexUrl": "./levels/index.json",
+  "remoteLevelIndexUrl": "",
+  "preferRemote": true,
+  "requestTimeoutMs": 4000,
+  "ads": {
+    "desktopSimulation": true,
+    "interstitialSeconds": 3,
+    "bannerEnabled": true
+  }
+}

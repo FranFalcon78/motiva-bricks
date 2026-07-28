@@ -1,0 +1,45 @@
+{
+  "id": "core-spiral",
+  "order": 2,
+  "name": "Espiral del Nucleo",
+  "subtitle": "Anillos concentricos con accesos laterales",
+  "difficulty": "Demo 2",
+  "seed": 22041,
+  "theme": {
+    "backgroundTop": "#1c053f",
+    "backgroundBottom": "#070012",
+    "accent": "#ff9d32",
+    "palette": ["#ff542e", "#ff8a2b", "#ffd447", "#fff28a", "#ff6f3d"],
+    "indestructible": "#777d8e",
+    "ball": "#fffdf4",
+    "ballGlow": "#ffe75b",
+    "paddleStart": "#ff653f",
+    "paddleMiddle": "#fff26a",
+    "paddleEnd": "#ff8a2b"
+  },
+  "generator": {
+    "pattern": "concentric",
+    "cols": 56,
+    "rows": 42,
+    "gap": 2,
+    "height": 620,
+    "hardRate": 0.18,
+    "veryHardRate": 0.035,
+    "indestructibleRate": 0.018,
+    "structuralEvery": 173
+  },
+  "physics": {
+    "ballSpeed": 8.65,
+    "ballRadius": 8,
+    "paddleWidth": 154,
+    "maxBounceAngleDeg": 69
+  },
+  "rules": { "lives": 3 },
+  "powerups": {
+    "dropRate": 0.115,
+    "wideSeconds": 15,
+    "shieldSeconds": 12,
+    "wideMultiplier": 1.65,
+    "weights": { "triple": 0.38, "wide": 0.31, "shield": 0.31 }
+  }
+}

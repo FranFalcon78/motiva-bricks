@@ -1,0 +1,37 @@
+MOTIVA BRICKS 0.1.0 - LEEME PRIMERO
+
+Esta entrega contiene el juego, el proyecto Godot y un lanzador nativo para Linux Mint.
+
+FORMA RECOMENDADA DE INICIARLO
+
+1. Extrae el archivo TAR.GZ completo.
+2. Abre la carpeta Motiva-Bricks-Godot-v0.1.2.
+3. Haz doble clic en MotivaBricks-Launcher.
+4. En el primer inicio se descargara Godot 4.7.1 Standard desde el servidor oficial.
+5. Espera a que termine la ventana de progreso; despues se abrira el juego.
+
+Desde la terminal tambien puedes usar:
+
+  ./MotivaBricks-Launcher
+
+La descarga del motor solo se realiza una vez y queda en la carpeta runtime.
+
+ALTERNATIVA INMEDIATA
+
+Si la descarga de Godot falla, ejecuta PROBAR_VERSION_WEB.sh. Abre una version jugable de compatibilidad en el navegador y no necesita instalar el motor.
+
+ABRIR EL PROYECTO
+
+  ./ABRIR_PROYECTO_EN_GODOT.sh
+
+CONTROLES
+
+- Raton o pantalla tactil: mover el carro.
+- A/D o flechas: mover el carro.
+- Espacio o toque: lanzar.
+- P o Escape: pausa.
+- Teclas 1 a 5: elegir escenario desde el menu.
+
+PUBLICIDAD
+
+El banner y el intersticial son simulaciones. No se usan identificadores ni conexiones reales de AdMob en esta primera version.

@@ -1,0 +1,7 @@
+.godot/
+runtime/*
+!runtime/.gitkeep
+build/linux/*
+build/android/*
+*.log
+.DS_Store

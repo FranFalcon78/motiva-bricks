@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Abrir Motiva Bricks en Godot
+Comment=Abre el proyecto para seguir desarrollándolo
+Exec=sh -c 'DIR=$(dirname "$0"); cd "$DIR" && exec ./ABRIR_PROYECTO_EN_GODOT.sh' %k
+Icon=godot
+Terminal=true
+Categories=Development;Game;
+StartupNotify=true
